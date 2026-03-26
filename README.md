@@ -160,6 +160,15 @@ An interface will appear showing results as they load, letting you track the age
   <img src="assets/cli/cli_transaction.png" width="100%" style="display: inline-block; margin: 0 2%;">
 </p>
 
+### Quick Smoke Test (No LLM Keys Required)
+
+To confirm the repository runs without configuring LLM providers, install dependencies and run:
+```bash
+pip install .
+python test.py
+```
+This script fetches recent market data via yfinance and prints a MACD indicator snapshot, so it requires internet access.
+
 ## TradingAgents Package
 
 ### Implementation Details
